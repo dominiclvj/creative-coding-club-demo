@@ -1,0 +1,42 @@
+{
+  "languages": [
+    {
+      "language": "browser"
+    }
+  ],
+
+  "modules": [
+    {
+      "name": "Sandbox",
+      "dir": "sandbox",
+      "exercises": [
+        {
+          "name": "Sandbox",
+          "dir": "sandbox",
+          "initialFiles": ["index.html", "index.js"],
+          "tests": [],
+          "scripts": [],
+          "servers": [],
+          "browser": {
+            "type": "file",
+            "file": "index.html",
+            "port": 3000
+          }
+        },
+        {
+          "name": "Sandbox 2",
+          "dir": "sandbox_2",
+          "initialFiles": ["index.html", "index.js"],
+          "tests": [],
+          "scripts": [],
+          "servers": [],
+          "browser": {
+            "type": "file",
+            "file": "index.html",
+            "port": 3000
+          }
+        }
+      ]
+    }
+  ]
+}
