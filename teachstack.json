@@ -2,40 +2,198 @@
   "languages": [
     {
       "language": "browser"
+    },
+    {
+      "language": "node",
+      "version": "22"
     }
   ],
-
   "modules": [
     {
-      "name": "Sandbox",
-      "dir": "sandbox",
+      "name": "GSAP Express",
+      "dir": "gsap-express",
       "exercises": [
         {
-          "name": "Sandbox",
-          "dir": "sandbox",
-          "initialFiles": ["index.html", "index.js"],
-          "tests": [],
-          "scripts": [],
-          "servers": [],
-          "browser": {
-            "type": "file",
-            "file": "index.html",
-            "port": 3000
-          }
+          "skippable": true,
+          "name": "GSAP Express Introduction",
+          "dir": "javascript-introduction",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "lets begin",
+              "name": "Let's begin!",
+              "description": "Click 'Next' to proceed to the first lesson"
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
         },
         {
-          "name": "Sandbox 2",
-          "dir": "sandbox_2",
-          "initialFiles": ["index.html", "index.js"],
-          "tests": [],
-          "scripts": [],
-          "servers": [],
-          "browser": {
-            "type": "file",
-            "file": "index.html",
-            "port": 3000
-          }
-        }
+          "name": "What is a Tween?",
+          "dir": "what-is-a-tween",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "XXX",
+              "name": "XXX",
+              "description": "XXX"
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "name": "from() and fromTo()",
+          "dir": "from-and-fromto",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "XXX",
+              "name": "XXX",
+              "description": "XXX"
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "name": "Special Properties: Delay and Repeat",
+          "dir": "delay-and-repeat",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "XXX",
+              "name": "XXX",
+              "description": "XXX"
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "name": "Special Property: Ease",
+          "dir": "special-property-ease",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "XXX",
+              "name": "XXX",
+              "description": "XXX"
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "name": "Reading Ease Curves",
+          "dir": "reading-ease-curves",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "XXX",
+              "name": "XXX",
+              "description": "XXX"
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "name": "Special Property: Stagger",
+          "dir": "special-property-stagger",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "XXX",
+              "name": "XXX",
+              "description": "XXX"
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "name": "Tween Control",
+          "dir": "tween-control",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "XXX",
+              "name": "XXX",
+              "description": "XXX"
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "name": "transformOrigin",
+          "dir": "transformorigin",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "XXX",
+              "name": "XXX",
+              "description": "XXX"
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
+          "name": "Why from() Tweens Glitch and Stop Working!",
+          "dir": "why-from-tweens-glitch",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "XXX",
+              "name": "XXX",
+              "description": "XXX"
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        }  
       ]
     }
   ]
