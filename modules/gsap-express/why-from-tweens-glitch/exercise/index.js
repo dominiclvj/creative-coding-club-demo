@@ -5,7 +5,6 @@ const bg = document.querySelector(".bg")
 //notice the inner circle stops working properly
 //try to fix it in the code below!
 
-console.log({ button })
 
 button.addEventListener("mouseenter", function () {
 	console.log('fired')
