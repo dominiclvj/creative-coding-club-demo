@@ -33,14 +33,19 @@
           ]
         },
         {
-          "name": "What is a Tween?",
-          "dir": "what-is-a-tween",
+          "name": "Tweens and Timelines",
+          "dir": "tweens-and-timelines",
           "initialFiles": ["index.html"],
           "tests": [
             {
+              "test": "",
+              "name": "Edit the distance of the star animation",
+              "description": "Increase the distance of the star animation to 1000px"
+            },
+            {
               "test": "XXX",
-              "name": "XXX",
-              "description": "XXX"
+              "name": "Edit the duration of the star animation",
+              "description": "Increase the duration of the star animation to 5 seconds"
             }
           ],
           "scripts": [
