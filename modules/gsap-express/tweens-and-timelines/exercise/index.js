@@ -1,1 +1,1 @@
-gsap.to(".star", {x:700, y:400, scale:3, rotation:360, duration:3});
+gsap.to(".star", {x:750, duration:3});
