@@ -56,14 +56,32 @@
           ]
         },
         {
+          "name": "Basic Tween",
+          "dir": "basic-tween",
+          "initialFiles": ["index.html"],
+          "tests": [
+            {
+              "test": "",
+              "name": "Create your first tween",
+              "description": "Use the example code to create your first tween"
+            }
+          ],
+          "scripts": [
+            {
+              "language": "browser",
+              "file": "index.html"
+            }
+          ]
+        },
+        {
           "name": "from() and fromTo()",
           "dir": "from-and-fromto",
           "initialFiles": ["index.html"],
           "tests": [
             {
-              "test": "XXX",
-              "name": "XXX",
-              "description": "XXX"
+              "test": "",
+              "name": "Create your first fromTo() tween",
+              "description": "Use the example code to create your first fromTo() tween"
             }
           ],
           "scripts": [
@@ -79,9 +97,9 @@
           "initialFiles": ["index.html"],
           "tests": [
             {
-              "test": "XXX",
-              "name": "XXX",
-              "description": "XXX"
+              "test": "",
+              "name": "Create your first repeating tween",
+              "description": "Use the example code to create your first repeating tween"
             }
           ],
           "scripts": [
