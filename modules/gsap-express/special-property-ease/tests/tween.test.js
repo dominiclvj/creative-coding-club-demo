@@ -11,8 +11,7 @@ const localScriptContent = fs.readFileSync(localScriptPath, 'utf8');
 
 
 describe("ease", () => {
-    it('ease', async () => {
-        // Create JSDOM
+    const loadWindow = async () => {
         const dom = new JSDOM(html, {
             resources: 'usable',
             runScripts: 'dangerously',
@@ -22,32 +21,59 @@ describe("ease", () => {
 
         const { window } = dom;
 
-        // wait for script content to be loaded
         await new Promise(resolve => {
             window.onload = resolve;
         });
 
-        // gsap should be defined on the jsdom window
         if (typeof window.gsap === 'undefined') {
             throw new Error("GSAP was not loaded from the CDN after window.onload.");
         }
 
-        // run the script as it can't be easily loaded due to the relative file paths
         window.eval(localScriptContent);
 
-        // get the fred element
-        const fred = window.document.querySelector('.fred');
-        const tweens = window.gsap.getTweensOf(fred);
+        return window;
+    };
 
-        if (tweens.length !== 1) {
-            throw new Error('incorrect number of tweens registered')
+    const normaliseEase = ease => {
+        if (typeof ease === 'string') {
+            return ease.replace(/\s+/g, '').toLowerCase();
         }
 
-        let tween = tweens[0]
+        if (ease && typeof ease === 'object' && typeof ease.id === 'string') {
+            return ease.id.replace(/\s+/g, '').toLowerCase();
+        }
 
-        expect(tween).toBeTruthy()
+        if (typeof ease === 'function' && typeof ease.id === 'string') {
+            return ease.id.replace(/\s+/g, '').toLowerCase();
+        }
 
-        expect(tween.vars.ease).not.toBeUndefined()
+        return '';
+    };
 
-    })
+    const getSingleTween = (window, selector) => {
+        const element = window.document.querySelector(selector);
+        const tweens = window.gsap.getTweensOf(element);
+
+        if (tweens.length !== 1) {
+            throw new Error('incorrect number of tweens registered for ' + selector);
+        }
+
+        const [tween] = tweens;
+
+        expect(tween).toBeTruthy();
+
+        return tween;
+    };
+
+    it('applies a back.config(6) ease to the green tween', async () => {
+        const window = await loadWindow();
+        const greenTween = getSingleTween(window, '.fred.green');
+        expect(normaliseEase(greenTween.vars.ease)).toBe('back.config(6)');
+    });
+
+    it('applies a linear ease to the pink tween', async () => {
+        const window = await loadWindow();
+        const pinkTween = getSingleTween(window, '.fred.pink');
+        expect(normaliseEase(pinkTween.vars.ease)).toBe('linear');
+    });
 })

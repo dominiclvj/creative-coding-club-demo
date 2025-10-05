@@ -114,8 +114,13 @@
           "tests": [
             {
               "test": "ease",
-              "name": "Create your first eased tween",
-              "description": "Use the example code to create your first eased tween"
+              "name": "Add a 'back' ease to the green tween",
+              "description": "Edit the green fred tween to use a 'back' ease with config 6"
+            },
+            {
+              "test": "ease",
+              "name": "Add a 'linear' ease to the pink tween",
+              "description": "Edit the pink fred tween to use a 'linear' ease"
             }
           ],
           "scripts": [],
