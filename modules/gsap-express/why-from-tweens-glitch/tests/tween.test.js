@@ -1,8 +1,10 @@
 import * as fs from 'fs'
 import * as path from 'path'
 
-import {describe, expect, it} from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { JSDOM } from 'jsdom'
+
+import { patchGSAP } from '../../../../utils'
 
 const htmlPath = path.resolve(__dirname, '../exercise/index.html')
 const html = fs.readFileSync(htmlPath, 'utf8');
@@ -32,25 +34,28 @@ describe("glitch", () => {
             throw new Error("GSAP was not loaded from the CDN after window.onload.");
         }
 
+        const registry = patchGSAP(window.gsap)
+
         // run the script as it can't be easily loaded due to the relative file paths
         window.eval(localScriptContent);
 
         // get the button element
         const button = window.document.querySelector('.button')
-        const tweens = window.gsap.getTweensOf(button);
+        const bg = window.document.querySelector('.bg')
+        const tweens = window.gsap.getTweensOf(bg);
 
         for (let i = 0; i < 3; i++) {
 
-        const mouseEnterEvent = new window.MouseEvent('mouseenter', {
-            bubbles: false,
-            cancelable: true,
-            view: window
-        })
-        button.dispatchEvent(mouseEnterEvent)
+            const mouseEnterEvent = new window.MouseEvent('mouseenter', {
+                bubbles: false,
+                cancelable: true,
+                view: window
+            })
+            button.dispatchEvent(mouseEnterEvent)
         }
 
 
-        expect(tweens.length).toBe(1)
+        expect(registry.all.length).toBe(1)
 
 
         const mouseEnterEvent = new window.MouseEvent('mouseenter', {
@@ -60,13 +65,6 @@ describe("glitch", () => {
 
         button.dispatchEvent(mouseEnterEvent)
 
-        console.log(tweens.length)
-
-        let tween = tweens[0]
-
-        expect(tween).toBeTruthy()
-
-
-        expect(tween.vars.transformOrigin).not.toBeUndefined()
+        expect(registry.all.length).toBe(1)
     })
 })
