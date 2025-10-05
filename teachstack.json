@@ -23,7 +23,12 @@
               "description": "Click 'Next' to proceed to the first lesson"
             }
           ],
-          "scripts": []
+          "scripts": [],
+          "browser": {
+            "type": "file",
+            "file": "index.html",
+            "port": 3000
+          }
         },
         {
           "name": "Tweens and Timelines",
