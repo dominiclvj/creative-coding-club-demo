@@ -28,12 +28,12 @@
           ],
           "tests": [
             {
-              "test": "",
+              "test": "intro-distance",
               "name": "Edit the distance of the star animation",
-              "description": "Increase the distance of the star animation to 1000px"
+              "description": "Increase the x distance of the star animation to 1000px"
             },
             {
-              "test": "XXX",
+              "test": "intro-duration",
               "name": "Edit the duration of the star animation",
               "description": "Increase the duration of the star animation to 5 seconds"
             }
@@ -53,7 +53,7 @@
           ],
           "tests": [
             {
-              "test": "",
+              "test": "first-tween",
               "name": "Create your first tween",
               "description": "Use the example code to create your first tween"
             }
@@ -73,7 +73,7 @@
           ],
           "tests": [
             {
-              "test": "",
+              "test": "first-fromto",
               "name": "Create your first fromTo() tween",
               "description": "Use the example code to create your first fromTo() tween"
             }
@@ -93,7 +93,7 @@
           ],
           "tests": [
             {
-              "test": "",
+              "test": "repeat",
               "name": "Create your first repeating tween",
               "description": "Use the example code to create your first repeating tween"
             }
@@ -113,29 +113,9 @@
           ],
           "tests": [
             {
-              "test": "XXX",
-              "name": "XXX",
-              "description": "XXX"
-            }
-          ],
-          "scripts": [],
-          "browser": {
-            "type": "file",
-            "file": "index.html",
-            "port": 3000
-          }
-        },
-        {
-          "name": "Reading Ease Curves",
-          "dir": "reading-ease-curves",
-          "initialFiles": [
-            "index.html"
-          ],
-          "tests": [
-            {
-              "test": "XXX",
-              "name": "XXX",
-              "description": "XXX"
+              "test": "ease",
+              "name": "Create your first eased tween",
+              "description": "Use the example code to create your first eased tween"
             }
           ],
           "scripts": [],
@@ -153,9 +133,9 @@
           ],
           "tests": [
             {
-              "test": "XXX",
-              "name": "XXX",
-              "description": "XXX"
+              "test": "stagger",
+              "name": "Create your first staggered tween",
+              "description": "Use the example code to create your first staggered tween"
             }
           ],
           "scripts": [],
@@ -173,9 +153,9 @@
           ],
           "tests": [
             {
-              "test": "XXX",
-              "name": "XXX",
-              "description": "XXX"
+              "test": "pause",
+              "name": "Create your first paused tween",
+              "description": "Use the example code to create your first paused tween"
             }
           ],
           "scripts": [],
@@ -193,9 +173,9 @@
           ],
           "tests": [
             {
-              "test": "XXX",
-              "name": "XXX",
-              "description": "XXX"
+              "test": "transform",
+              "name": "Create your first transformed tween",
+              "description": "Use the example code to create your first transformed tween"
             }
           ],
           "scripts": [],

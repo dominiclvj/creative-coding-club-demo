@@ -4,7 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test_tweens_and_timelines": "vitest run ./modules/gsap-express/tweens-and-timelines/tests",
+    "test_basic": "vitest run ./modules/gsap-express/basic-tween/tests",
+    "test_from": "vitest run ./modules/gsap-express/from-and-fromto/tests",
+    "test_delay": "vitest run ./modules/gsap-express/delay-and-repeat/tests",
+    "test_ease": "vitest run ./modules/gsap-express/special-property-ease/tests",
+    "test_stagger": "vitest run ./modules/gsap-express/special-property-stagger/tests",
+    "test_control": "vitest run ./modules/gsap-express/tween-control/tests",
+    "test_origin": "vitest run ./modules/gsap-express/transformorigin/tests",
+    "test_glitch": "vitest run ./modules/gsap-express/why-from-tweens-glitch/tests"
   },
   "repository": {
     "type": "git",
@@ -16,6 +24,7 @@
   },
   "homepage": "https://github.com/dominiclvj/creative-coding-club-demo#readme",
   "dependencies": {
+    "@sinonjs/fake-timers": "^15.0.0",
     "jsdom": "^27.0.0",
     "vite": "^7.1.9",
     "vitest": "^3.2.4"

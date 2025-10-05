@@ -1,1 +1,13 @@
-gsap.to(".star", {x:750, duration:3});
+const button = document.querySelector(".button")
+const bg = document.querySelector(".bg")
+
+//rollover the hover circle quickly
+//notice the inner circle stops working properly
+//try to fix it in the code below!
+
+console.log({ button })
+
+button.addEventListener("mouseenter", function () {
+	console.log('fired')
+	gsap.from(bg, { scale: 0, duration: 1, ease: "circ" })
+})
