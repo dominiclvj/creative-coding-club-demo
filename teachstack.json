@@ -21,16 +21,41 @@
           "scripts": []
         },
         {
-          "name": "What is a Tween?",
-          "dir": "what-is-a-tween",
+          "name": "Tweens and Timelines",
+          "dir": "tweens-and-timelines",
           "initialFiles": [
             "index.html"
           ],
           "tests": [
             {
+              "test": "",
+              "name": "Edit the distance of the star animation",
+              "description": "Increase the distance of the star animation to 1000px"
+            },
+            {
               "test": "XXX",
-              "name": "XXX",
-              "description": "XXX"
+              "name": "Edit the duration of the star animation",
+              "description": "Increase the duration of the star animation to 5 seconds"
+            }
+          ],
+          "scripts": [],
+          "browser": {
+            "type": "file",
+            "file": "index.html",
+            "port": 3000
+          }
+        },
+        {
+          "name": "Basic Tween",
+          "dir": "basic-tween",
+          "initialFiles": [
+            "index.html"
+          ],
+          "tests": [
+            {
+              "test": "",
+              "name": "Create your first tween",
+              "description": "Use the example code to create your first tween"
             }
           ],
           "scripts": [],
@@ -48,9 +73,9 @@
           ],
           "tests": [
             {
-              "test": "XXX",
-              "name": "XXX",
-              "description": "XXX"
+              "test": "",
+              "name": "Create your first fromTo() tween",
+              "description": "Use the example code to create your first fromTo() tween"
             }
           ],
           "scripts": [],
@@ -68,9 +93,9 @@
           ],
           "tests": [
             {
-              "test": "XXX",
-              "name": "XXX",
-              "description": "XXX"
+              "test": "",
+              "name": "Create your first repeating tween",
+              "description": "Use the example code to create your first repeating tween"
             }
           ],
           "scripts": [],

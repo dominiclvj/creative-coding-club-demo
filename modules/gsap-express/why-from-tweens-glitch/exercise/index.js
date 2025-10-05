@@ -1,0 +1,1 @@
+gsap.to(".star", {x:750, duration:3});
