@@ -16,7 +16,13 @@
           "name": "GSAP Express Introduction",
           "dir": "javascript-introduction",
           "initialFiles": ["index.html"],
-          "tests": [],
+          "tests": [            
+            {
+              "test": "lets begin",
+              "name": "Let's begin!",
+              "description": "Click 'Next' to proceed to the first lesson"
+            }
+          ],
           "scripts": []
         },
         {

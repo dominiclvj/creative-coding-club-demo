@@ -1,3 +1,9 @@
+<style>
+code, pre {
+  font-size: 0.9rem;
+}
+</style>
+
 # from() and fromTo()
 
 ## Learning
