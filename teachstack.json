@@ -33,7 +33,7 @@
         {
           "name": "Tweens and Timelines",
           "dir": "tweens-and-timelines",
-          "initialFiles": ["index.html"],
+          "initialFiles": ["index.js"],
           "tests": [
             {
               "test": "intro-distance",
@@ -56,7 +56,7 @@
         {
           "name": "Basic Tween",
           "dir": "basic-tween",
-          "initialFiles": ["index.html"],
+          "initialFiles": ["index.js"],
           "tests": [
             {
               "test": "first-tween",
@@ -74,7 +74,7 @@
         {
           "name": "from() and fromTo()",
           "dir": "from-and-fromto",
-          "initialFiles": ["index.html"],
+          "initialFiles": ["index.js"],
           "tests": [
             {
               "test": "first-fromto",
@@ -92,7 +92,7 @@
         {
           "name": "Special Properties: Delay and Repeat",
           "dir": "delay-and-repeat",
-          "initialFiles": ["index.html"],
+          "initialFiles": ["index.js"],
           "tests": [
             {
               "test": "repeat",
@@ -110,7 +110,7 @@
         {
           "name": "Special Property: Ease",
           "dir": "special-property-ease",
-          "initialFiles": ["index.html"],
+          "initialFiles": ["index.js"],
           "tests": [
             {
               "test": "ease",
@@ -133,7 +133,7 @@
         {
           "name": "Special Property: Stagger",
           "dir": "special-property-stagger",
-          "initialFiles": ["index.html"],
+          "initialFiles": ["index.js"],
           "tests": [
             {
               "test": "stagger",
@@ -151,7 +151,7 @@
         {
           "name": "Tween Control",
           "dir": "tween-control",
-          "initialFiles": ["index.html"],
+          "initialFiles": ["index.js"],
           "tests": [
             {
               "test": "pause",
@@ -169,7 +169,7 @@
         {
           "name": "transformOrigin",
           "dir": "transformorigin",
-          "initialFiles": ["index.html"],
+          "initialFiles": ["index.js"],
           "tests": [
             {
               "test": "transform",
@@ -187,7 +187,7 @@
         {
           "name": "Why from() Tweens Glitch and Stop Working!",
           "dir": "why-from-tweens-glitch",
-          "initialFiles": ["index.html"],
+          "initialFiles": ["index.js"],
           "tests": [
             {
               "test": "XXX",
