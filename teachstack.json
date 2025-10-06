@@ -113,12 +113,12 @@
           "initialFiles": ["index.js"],
           "tests": [
             {
-              "test": "ease",
+              "test": "back ease",
               "name": "Add a 'back' ease to the green tween",
               "description": "Edit the green fred tween to use a 'back' ease with config 6"
             },
             {
-              "test": "ease",
+              "test": "linear ease",
               "name": "Add a 'linear' ease to the pink tween",
               "description": "Edit the pink fred tween to use a 'linear' ease"
             }
