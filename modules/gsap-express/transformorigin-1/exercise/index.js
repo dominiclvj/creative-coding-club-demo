@@ -1,3 +1,23 @@
+const demo = document.querySelector(".demo");
+const box = document.querySelector(".box");
+const dot = document.querySelector(".dot");
+const nav = document.querySelector(".nav");
+const labels = document.querySelector(".labels");
+const output = document.querySelector(".output");
+let property = document.querySelector('input[name="property"]:checked').value;
+
+const values = {
+  keywordsHorizontal: ["left", "center", "right"],
+  keywordsVertical: ["top", "center", "bottom"],
+  keywordsArray: [],
+  pixelsHorizontal: ["0", "150px", "300px"],
+  pixelsVertical: ["0", "150px", "300px"],
+  pixelsArray: [],
+  percentsHorizontal: ["0", "50%", "100%"],
+  percentsVertical: ["0", "50%", "100%"],
+  percentsArray: []
+};
+
 const label = document.querySelector(".label");
 
 function generateValues(type) {
@@ -42,6 +62,8 @@ generateValues("keywords");
 createLabels();
 const newLabels = document.querySelectorAll(".newLabel");
 
+
+
 const radios = document.getElementsByName("property");
 for (var i = 0, length = radios.length; i < length; i++) {
   radios[i].addEventListener("change", updateProperty);
@@ -53,3 +75,4 @@ function updateProperty() {
     gsap.set(e, { textContent: values[property + "Array"][i] });
   });
 }
+
