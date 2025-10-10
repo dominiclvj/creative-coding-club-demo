@@ -4,7 +4,7 @@ code, pre {
 }
 </style>
 
-# transformOrigin 1
+# transformOrigin 2
 
 ## Learning
 By default DOM elements will scale, spin, and skew around their center point.
