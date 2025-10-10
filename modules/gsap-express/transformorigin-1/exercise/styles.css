@@ -33,7 +33,6 @@ h2 span {
   display:none;
 }
 
-
 h2 {
   position:absolute;
   top:20px;
@@ -82,8 +81,6 @@ h2 {
   position: absolute;
   bottom:20px;
 }
-
-
 
 .output span {
   color:#d0782a;

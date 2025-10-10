@@ -1,25 +1,29 @@
 body {
   font-family: 'Kanit', sans-serif;
-  background:#252525;
+  background: #252525;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   height: 100vh;
+  margin: 0;
+  padding-top: 20px;
 }
+
 #demo {
-  position:relative;
-  width:800px;
-  height:410px;
-  border:1px solid #333;
-  background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/space-background.png);
+  position: relative;
+  width: 800px;
+  height: 410px;
+  border: 1px solid #333;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/32887/space-background.png);
 }
 
 #freds {
-  position:relative;
-  top:300px;
-  left:20px;
+  position: relative;
+  top: 20px;
+  left: 20px;
 }
 
 #freds img {
-  width:122px;
+  width: 122px;
 }

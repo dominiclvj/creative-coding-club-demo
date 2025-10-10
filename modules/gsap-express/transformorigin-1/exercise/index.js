@@ -62,8 +62,6 @@ generateValues("keywords");
 createLabels();
 const newLabels = document.querySelectorAll(".newLabel");
 
-
-
 const radios = document.getElementsByName("property");
 for (var i = 0, length = radios.length; i < length; i++) {
   radios[i].addEventListener("change", updateProperty);
