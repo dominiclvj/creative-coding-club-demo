@@ -168,14 +168,33 @@
         },
         {
           "skippable": true,
-          "name": "transformOrigin",
-          "dir": "transformorigin",
+          "name": "transformOrigin 1",
+          "dir": "transformorigin-1",
           "initialFiles": ["index.js"],
           "tests": [
             {
-              "test": "transform",
-              "name": "Create your first transformed tween",
-              "description": "Use the example code to create your first transformed tween"
+              "test": "",
+              "name": "Experiment with the transform demo",
+              "description": "Play around with the transformation demo and then click through to the next lesson"
+            }
+          ],
+          "scripts": [],
+          "browser": {
+            "type": "file",
+            "file": "index.html",
+            "port": 3000
+          }
+        },
+        {
+          "skippable": true,
+          "name": "transformOrigin 2",
+          "dir": "transformorigin-2",
+          "initialFiles": ["index.js"],
+          "tests": [
+            {
+              "test": "",
+              "name": "Experiment with the transform demo",
+              "description": "Play around with the dynamic transformation demo and then click through to the next lesson"
             }
           ],
           "scripts": [],

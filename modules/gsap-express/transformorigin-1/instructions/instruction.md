@@ -4,7 +4,7 @@ code, pre {
 }
 </style>
 
-# transformOrigin
+# transformOrigin 1
 
 ## Learning
 By default DOM elements will scale, spin, and skew around their center point.
@@ -17,4 +17,4 @@ transformOrigin values are set with a pair of horizontal (x) and vertical (y) va
 
 The values are commonly set in pixels, percents, or using the css keywords: left, center, right, top, bottom.
 
-The demo below shows a wide variety of examples of each unit.
+This example shows how transforms can be made with a set pair of horizontal and vertical coordinates.
