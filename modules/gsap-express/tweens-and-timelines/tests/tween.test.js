@@ -4,12 +4,10 @@ import * as path from 'path'
 import { describe, expect, it } from 'vitest'
 import { JSDOM } from 'jsdom'
 
-
 const htmlPath = path.resolve(__dirname, '../exercise/index.html')
 const html = fs.readFileSync(htmlPath, 'utf8');
 const localScriptPath = path.resolve(__dirname, '../exercise/index.js');
 const localScriptContent = fs.readFileSync(localScriptPath, 'utf8');
-
 
 describe("tweens and timelines", () => {
     it('intro-distance', async () => {

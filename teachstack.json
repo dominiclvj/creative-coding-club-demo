@@ -138,7 +138,7 @@
             {
               "test": "stagger",
               "name": "Create your first staggered tween",
-              "description": "Use the example code to create your first staggered tween"
+              "description": "Add a stagger effect to the fred animations"
             }
           ],
           "scripts": [],
@@ -154,9 +154,9 @@
           "initialFiles": ["index.js"],
           "tests": [
             {
-              "test": "pause",
-              "name": "Create your first paused tween",
-              "description": "Use the example code to create your first paused tween"
+              "test": "restart",
+              "name": "Add a restart button to control the tween",
+              "description": "Use the tween.restart() button to add a reset button for the animation"
             }
           ],
           "scripts": [],
@@ -167,6 +167,7 @@
           }
         },
         {
+          "skippable": true,
           "name": "transformOrigin",
           "dir": "transformorigin",
           "initialFiles": ["index.js"],
@@ -190,9 +191,9 @@
           "initialFiles": ["index.js"],
           "tests": [
             {
-              "test": "XXX",
-              "name": "XXX",
-              "description": "XXX"
+              "test": "bugfix",
+              "name": "Fix the bug with the from() tween",
+              "description": "Watch the accompanying video and add some javascript to fix the bug"
             }
           ],
           "scripts": [],
