@@ -1,7 +1,7 @@
 import * as fs from 'fs'
 import * as path from 'path'
 
-import {describe, expect, it} from 'vitest'
+import {describe, expect, it, vi} from 'vitest'
 import { JSDOM } from 'jsdom'
 
 const htmlPath = path.resolve(__dirname, '../exercise/index.html')
@@ -11,7 +11,7 @@ const localScriptContent = fs.readFileSync(localScriptPath, 'utf8');
 
 
 describe("control", () => {
-    it('pause', async () => {
+    it('restart', async () => {
         // Create JSDOM
         const dom = new JSDOM(html, {
             resources: 'usable',
@@ -47,7 +47,21 @@ describe("control", () => {
 
         expect(tween).toBeTruthy()
 
-        expect(tween.vars.pause).toBe(true)
+        const restartButton = window.document.querySelector("#restart")
+        if (!restartButton) {
+            throw new Error("button should exist")
+        }
+
+        const spy = vi.spyOn(tween, 'restart')
+
+        const mouseClickEvent = new window.MouseEvent('click', {
+            bubbles: true,
+            cancelable: true,
+            view: window
+        })
+        restartButton.dispatchEvent(mouseClickEvent)
+
+        expect(spy).toHaveBeenCalled()
 
     })
 })
