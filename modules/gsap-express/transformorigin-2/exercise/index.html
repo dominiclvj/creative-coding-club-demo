@@ -1,25 +1,34 @@
 <!doctype html>
 <html lang="en">
- <div class="dot"></div>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <title>TransformOrigin</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
 
-<div class="demo">
-  <h2> Click anywhere to set the transformOrigin</h2>
-<div class="box">
-  
-</div>
-   <div class="nav">
-    <div class="radios">
-  <label>
-                <input type="radio" name="property" value="rotation" checked>
-                rotation
-            </label>
-        <label>
-                <input type="radio" name="property" value="scale">
-                scale
-            </label>
+<body>
+  <div class="dot"></div>
+  <div class="demo">
+    <h2> Click anywhere to set the transformOrigin</h2>
+    <div class="box">
     </div>
-     <div class="output">100<span>px</span> 100<span>px</span></div>
-   </div>
-</div> 
+    <div class="nav">
+      <div class="radios">
+        <label>
+          <input type="radio" name="property" value="rotation" checked>
+          rotation
+        </label>
+        <label>
+          <input type="radio" name="property" value="scale">
+          scale
+        </label>
+      </div>
+      <div class="output">100<span>px</span> 100<span>px</span></div>
+    </div>
+  </div>
+</body>
+
 </html>
